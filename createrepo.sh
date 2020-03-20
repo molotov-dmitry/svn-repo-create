@@ -155,8 +155,6 @@ use-sasl = true
 
 _EOF
 
-    rm -f "${directory}/${reponame}/conf/passwd" || exit 11
-
 fi
 
 clean=0
