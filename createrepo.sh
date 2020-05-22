@@ -135,7 +135,7 @@ fi
 
 ### Create default directories =================================================
 
-repourl="svn://127.0.0.1/${reponame}"
+repourl="svn://127.0.0.1/${directory}/${reponame}"
 
 svn mkdir "${repourl}/trunk" \
           "${repourl}/branches" \
