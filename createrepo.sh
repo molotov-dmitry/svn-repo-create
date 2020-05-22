@@ -22,8 +22,6 @@ trap cleanup EXIT
 
 ### Get arguments ==============================================================
 
-reponame="$1"
-
 shift
 
 argc=$#
@@ -62,6 +60,9 @@ do
         else
             echo 'Wrong argument' >&2
         fi
+    elif [[ "${arg:0:1}" != '-' ]]
+    then
+        reponame="${arg}"
     fi
 done
 
